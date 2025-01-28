@@ -243,10 +243,10 @@ FONT = bitmap_font.load_font("spleen-5x8.bdf")
 
 
 mqtt_client = MQTT.MQTT(
-    broker="c479054a35f64df79328b69a41d97f92.s1.eu.hivemq.cloud",
-    username="neonweb",
-    password="Test12345",
-    port=8883,
+    broker=BROKER_URL,
+    username=USERNAME,
+    password=PASSWORD,
+    port=PORT,
     socket_pool=socket,
     is_ssl=True,
     ssl_context=ssl.create_default_context(),
